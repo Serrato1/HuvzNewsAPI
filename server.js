@@ -71,7 +71,7 @@ setInterval(function(){
             })
             .then((articleRows)=>{
                 if(articleRows.length === 0){
-                    console.log("[ARTICLES] Inserting New Article :", url);
+                    console.log("[ARTICLES] Inserting New Article :", url); 
                     knex("articles")
                     .insert({
                         url,
